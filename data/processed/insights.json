@@ -1,0 +1,17 @@
+{
+  "worst_month": "Nov",
+  "worst_month_pm25": 84.2,
+  "best_month": "Sep",
+  "best_month_pm25": 27.7,
+  "worst_hour": "22:00",
+  "worst_hour_pm25": 70.9,
+  "best_hour": "16:00",
+  "best_hour_pm25": 36.9,
+  "weekday_pm25": 52.7,
+  "weekend_pm25": 53.6,
+  "naaqs_exceed_days": 126,
+  "naaqs_exceed_pct": 34.5,
+  "calm_pm25": 56.0,
+  "windy_pm25": 62.1,
+  "wind_lift": -6.2
+}
