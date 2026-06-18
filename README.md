@@ -100,20 +100,6 @@ python run_pipeline.py
 streamlit run dashboard.py
 ```
 
-### Using SQL Server instead of SQLite
-
-Copy `.env.example` to `.env` and set:
-
-```
-DB_TYPE=mssql
-MSSQL_SERVER=localhost\SQLEXPRESS
-MSSQL_DB=JaipurAQI
-```
-
-Then run the pipeline as normal. The schema and all SQL is compatible with SQL Server with minor dialect differences handled by SQLAlchemy.
-
----
-
 ## Dashboard Pages
 
 | Page | What it shows |
@@ -133,35 +119,3 @@ Then run the pipeline as normal. The schema and all SQL is compatible with SQL S
 - **4–5 AM** is paradoxically the cleanest time
 - On calm days (wind < 1 m/s), PM2.5 is significantly higher than on windy days
 - Data availability is ~95.6% for PM2.5 across the year
-
----
-
-## SQL Analysis Queries
-
-10 analysis queries covering:
-
-1. Monthly PM2.5 seasonal trend  
-2. Hour-of-day pollution profile  
-3. Days exceeding NAAQS standard  
-4. All-time worst readings  
-5. PM2.5 vs NO2 correlation by hour  
-6. Monthly data quality audit  
-7. Wind speed vs PM2.5 relationship  
-8. Weekend vs weekday comparison  
-9. Rolling 7-day PM2.5 average  
-10. AQI category distribution  
-
----
-
-## Limitations
-
-- Single station (Shastri Nagar) — multi-station comparison requires additional CPCB exports
-- No real-time ingestion — manual export workflow
-- SQLite used by default; SQL Server connection via `.env`
-
-## Future Scope
-
-- Multi-station comparison (Adarsh Nagar, Mansarovar, Police Commissionerate)
-- Automated CPCB data ingestion via scheduled task
-- Weather enrichment via OpenWeatherMap API
-- AQI forecasting using time-series models
