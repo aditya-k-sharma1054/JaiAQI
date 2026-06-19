@@ -8,6 +8,4 @@ logs/
 .venv/
 venv/
 
-data/raw/
-
 *.db-journal
