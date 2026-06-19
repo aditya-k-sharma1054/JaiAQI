@@ -4,5 +4,3 @@ sqlalchemy>=2.0.0
 streamlit>=1.35.0
 plotly>=5.20.0
 python-dotenv>=1.0.0
-# For SQL Server (optional — uncomment when using MSSQL):
-# pyodbc>=5.0.0
