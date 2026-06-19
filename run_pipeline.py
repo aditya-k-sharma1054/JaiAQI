@@ -1,10 +1,3 @@
-"""
-run_pipeline.py — Multi-station pipeline entry point.
-
-Usage:
-    python run_pipeline.py                    # scans data/raw/ for all parquets
-    python run_pipeline.py path/to/file.parquet   # single file
-"""
 import sys, re, time, json
 from pathlib import Path
 
